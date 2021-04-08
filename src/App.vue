@@ -1,10 +1,5 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/products">Home</router-link>
-      |
-      <router-link to="/about">About</router-link>
-    </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
       <a class="navbar-brand" href="/products">All Products</a>
       <button
@@ -59,17 +54,19 @@
         </form>
       </div>
     </nav>
+
     <router-view />
   </div>
 </template>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Times New Roman", Times, serif, Helvetica;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background-image: url("./assets/more-leaves.png");
 }
 
 #nav {
