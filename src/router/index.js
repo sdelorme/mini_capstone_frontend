@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import ProductsIndex from "../views/ProductsIndex.vue";
+import ProductsNew from "../views/ProductsNew.vue";
 
 Vue.use(VueRouter);
 
@@ -9,6 +10,11 @@ const routes = [
     path: "/products",
     name: "Products",
     component: ProductsIndex,
+  },
+  {
+    path: "/products/new",
+    name: "Products New",
+    component: ProductsNew,
   },
   {
     path: "/about",

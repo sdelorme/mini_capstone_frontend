@@ -1,6 +1,12 @@
 <template>
   <div id="app">
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div id="nav">
+      <router-link to="/products">Home</router-link>
+      |
+      <router-link to="/products/new">New Product</router-link>
+      |
+    </div>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-primary">
       <a class="navbar-brand" href="/products">All Products</a>
       <button
         class="navbar-toggler"
@@ -53,7 +59,7 @@
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
       </div>
-    </nav>
+    </nav> -->
 
     <router-view />
   </div>
