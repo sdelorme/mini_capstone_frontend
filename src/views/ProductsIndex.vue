@@ -1,11 +1,20 @@
 <template>
   <div class="home">
-    <h1>{{ message }}</h1>
-    <div v-for="product in products" :key="product.id">
-      <h2>{{ product.name }}</h2>
-      <p>Description: {{ product.description }}</p>
-      <p>Price: {{ product.price }}</p>
-      <hr />
+    <div class="container-fluid">
+      <h1>{{ message }}</h1>
+      <div class="row">
+        <div class="col-sm-4" v-for="product in products" :key="product.id">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">{{ product.name }}</h5>
+              <p class="card-text">{{ product.description }}</p>
+              <p class="card-text">{{ product.price }}</p>
+              <a href="#" class="btn btn-primary">Click here for more info!</a>
+            </div>
+          </div>
+          <br />
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -16,7 +25,7 @@ import axios from "axios";
 export default {
   data: function () {
     return {
-      message: "Welcome to Vue.js!",
+      message: "All Products",
       products: [],
     };
   },
